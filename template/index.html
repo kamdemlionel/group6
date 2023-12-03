@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{url_for('statics', path='fonts/icomoon/style.css')}}">
+
+    <link rel="stylesheet" href="{{url_for('statics', path='css/owl.carousel.min.css')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('statics', path='css/bootstrap.min.css')}}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{{url_for('statics', path='css/style.css')}}">
+
+    <title>Login to your account</title>
+  </head>
+  <body>
+  
+
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('statics/images/imag.png');"></div>
+    <div class="contents order-2 order-md-1">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <h3>Login to <strong>FileEncrypt</strong></h3>
+            <p class="mb-4"> We are glad to see you back on our site</p>
+            <form  action="/login" class="form"  method="POST">
+              <div class="form-group first">
+                <label>Email</label>
+                <input type="text" class="form-control" value="{{email}}" name="email" placeholder="your-email@gmail.com" id="email">
+              </div>
+              <div class="form-group last mb-3">
+                <label>Password</label>
+                <input type="password" class="form-control" value="{{password}}" name="password" placeholder="Your Password" id="password">
+              </div>
+
+              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <a href="/register", method="get" >Don't yet have an account signup</a>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+    
+    
+
+  <script src="{{url_for('statics', path='js/jquery-3.3.1.min.js')}}"></script>
+  <script src="{{url_for('statics', path='js/popper.min.js')}}"></script>
+  <script src="{{url_for('statics', path='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('statics', path='js/main.js')}}"></script>
+  </body>
+</html>
